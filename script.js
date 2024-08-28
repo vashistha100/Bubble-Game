@@ -1,9 +1,9 @@
 let timer = 60;
-let score = 0;
+let score1 = 0;
 
 function increaseScore() {
-  score += 10;
-  document.querySelector("#scoreval").textContent = score;
+  score1 += 10;
+  document.querySelector("#scoreval").textContent = score1;
 }
 
 function randomHitNumber() {
@@ -37,7 +37,7 @@ function runTimer() {
       document.querySelector("#timerval").innerText = timer;
     } else {
       clearInterval(interval);
-      document.querySelector("#pbtm").innerHTML = `<h1>${score}</h1>`;
+      document.querySelector("#pbtm").innerHTML = `<h1>${score1}</h1>`;
     }
   }, 1000);
 }
